@@ -12,8 +12,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 
 |Table 1|Table 2|
 |--|--|
-|<div>
-  <table border="1" class="dataframe">
+|<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -54,10 +53,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
       <td>319</td>
     </tr>
   </tbody>
-  </table>
-  
-</div> | <div>
-<table border="1" class="dataframe">
+  </table> | <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -98,8 +94,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
       <td>195</td>
     </tr>
   </tbody>
-  </table>
-</div>|
+  </table>|
 
 
 3. Get Model container image and define the model s3 output location
