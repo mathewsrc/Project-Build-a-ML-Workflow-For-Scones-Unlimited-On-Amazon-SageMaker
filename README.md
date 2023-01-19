@@ -12,18 +12,6 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 Test           |  Train
 :-------------------------:|:-------------------------:
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -68,18 +56,6 @@ Test           |  Train
   </tbody>
 </table>
 </div> | <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
