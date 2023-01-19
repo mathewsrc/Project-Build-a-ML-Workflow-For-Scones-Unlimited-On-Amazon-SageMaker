@@ -9,7 +9,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 
 2. Test and Train dataframes
 
-<div>
+<div width="300" height="300">
   <table width="200" height="100" border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
