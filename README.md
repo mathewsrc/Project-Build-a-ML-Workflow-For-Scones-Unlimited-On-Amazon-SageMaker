@@ -5,7 +5,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 
 1. Image transformed
 
-[!Example image transformerd](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_17_0.png)
+![Example image transformerd](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_17_0.png)
 
 2. Test and Train dataframes
 
