@@ -11,7 +11,8 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 
 <style>
   .container{
-      display:block;
+      display:flex;
+      flex-direction:row;
   }
 </style>
 <div class="container">
