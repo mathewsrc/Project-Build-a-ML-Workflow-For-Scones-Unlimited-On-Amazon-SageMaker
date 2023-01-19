@@ -96,7 +96,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
   </table>
 
 
-3. Get Model container image and define the model s3 output location
+3.0 Get Model container image and define the model s3 output location
 
 ```python
 from sagemaker import image_uris
