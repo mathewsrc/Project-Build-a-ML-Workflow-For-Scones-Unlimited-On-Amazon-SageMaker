@@ -12,7 +12,6 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 Test           |  Train
 :-------------------------:|:-------------------------:
 <div>
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -55,8 +54,7 @@ Test           |  Train
     </tr>
   </tbody>
 </table>
-</div> | <div>
-</style>
+</div>  |   <div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -288,8 +286,8 @@ def lambda_handler(event, context):
 
 6. 
 
-[!Observed Recent Inferences](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_84_0.png)
+![Observed Recent Inferences](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_84_0.png)
 
 7.
 
-[!Prediction Scores over Time](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/Output-98.PNG)
+![Prediction Scores over Time](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/Output-98.PNG)
