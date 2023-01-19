@@ -280,8 +280,8 @@ def lambda_handler(event, context):
 
 6. 
 
-![Observed Recent Inferences](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_84_0.png =350x350)
+![Observed Recent Inferences](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_84_0.png width="400" height="400")
 
 7.
 
-![Prediction Scores over Time](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/Output-98.PNG =350x350)
+![Prediction Scores over Time](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/Output-98.PNG width="400" height="400")
