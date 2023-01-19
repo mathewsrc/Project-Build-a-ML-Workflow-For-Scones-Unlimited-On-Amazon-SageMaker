@@ -55,6 +55,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 </div>  
 
 <div>
+<p>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -97,6 +98,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
     </tr>
   </tbody>
 </table>
+</p>
 </div>
 
 
@@ -108,7 +110,7 @@ algo_image = image_uris.retrieve(framework='image-classification', region=boto3.
 s3_output_location = f"s3://{bucket}/models/image_model"
 ```
 
-3.1 Define a Estimator with one instance of type 'ml.p3.2xlarge' and set the s3 output location
+ 3.1 Define a Estimator with one instance of type 'ml.p3.2xlarge' and set the s3 output location
 
 ```python
 img_classifier_model=sagemaker.estimator.Estimator(
@@ -121,7 +123,7 @@ img_classifier_model=sagemaker.estimator.Estimator(
 )
 ```
 
-3.2 Set hyperparameters
+ 3.2 Set hyperparameters
 
 ```python
 img_classifier_model.set_hyperparameters(
@@ -130,7 +132,7 @@ img_classifier_model.set_hyperparameters(
     num_training_samples= len(df_train) # the total number of training samples
 )
 ```
-3.3 Define four TrainingInput classes
+ 3.3 Define four TrainingInput classes
 
 ```python
 from sagemaker.debugger import Rule, rule_configs
@@ -155,7 +157,7 @@ model_inputs = {
 }
 ```
 
-3.4 Fit the model
+ 3.4 Fit the model
 
 ```python
 img_classifier_model.fit(inputs=model_inputs)
@@ -189,7 +191,7 @@ Step Functions            |  Step Functions After running
 :-------------------------:|:-------------------------:
 ![Structure](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/stepfunctions_graph%20(5).png)  |  ![Result](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/stepfunctions_graph%20(7).png)
 
-5.1 Lambda Function: copy an object from S3 and encode it
+ 5.1 Lambda Function: copy an object from S3 and encode it
 
 ```python
 import json
@@ -225,7 +227,7 @@ def lambda_handler(event, context):
     }
 ```
 
-5.2 Decode the image output from the previous function and return the inferences back to the Step Function
+ 5.2 Decode the image output from the previous function and return the inferences back to the Step Function
 
 ```python
 import json
@@ -258,7 +260,7 @@ def lambda_handler(event, context):
     }
 ```
 
-5.3  Filter low-confidence inferences < .093
+ 5.3  Filter low-confidence inferences < .093
 
 ```python
 def lambda_handler(event, context):
