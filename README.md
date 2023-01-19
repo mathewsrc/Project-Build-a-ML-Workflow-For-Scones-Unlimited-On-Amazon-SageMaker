@@ -10,6 +10,8 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 2. Test and Train dataframes
 
 <div>
+  
+<div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -51,11 +53,10 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
       <td>319</td>
     </tr>
   </tbody>
-</table>
-</div>  
-
+  </table>
+  </div>
+  
 <div>
-<p>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -97,9 +98,11 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
       <td>195</td>
     </tr>
   </tbody>
-</table>
-</p>
-</div>
+  </table>
+  </div>
+</div>  
+
+
 
 
 3. Get Model container image and define the model s3 output location
