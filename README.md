@@ -10,7 +10,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 2. Test and Train dataframes
 
 <div>
-  <table style="float: left;" border="1" class="dataframe">
+  <table width="200" height="100" border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -53,7 +53,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
   </tbody>
   </table>
   
-<table style="float: left;" border="1" class="dataframe">
+<table width="200" height="100" border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
