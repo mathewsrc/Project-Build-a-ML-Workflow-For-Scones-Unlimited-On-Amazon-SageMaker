@@ -8,6 +8,20 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 ![Example image transformerd](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_17_0.png)
 
 2. Test 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -50,6 +64,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
     </tr>
   </tbody>
   </table>
+</div>
   
 2.1 Train 
   <table border="1" class="dataframe">
@@ -94,6 +109,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
     </tr>
   </tbody>
   </table>
+</div>
 
 
 3.0 Get Model container image and define the model s3 output location
