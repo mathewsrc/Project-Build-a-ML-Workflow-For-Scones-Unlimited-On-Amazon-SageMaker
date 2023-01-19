@@ -9,7 +9,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 
 2. Test 
 
-<table border="1" width="50%">
+<table style="width:100%">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -54,7 +54,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 </div>
   
 2.1 Train 
-  <table border="1" width="50%">
+  <table style="width:100%">
   <thead>
     <tr style="text-align: right;">
       <th></th>
