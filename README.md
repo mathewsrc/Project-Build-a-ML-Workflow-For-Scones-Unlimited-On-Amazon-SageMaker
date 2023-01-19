@@ -8,7 +8,6 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 ![Example image transformerd](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/output_17_0.png)
 
 2. Test 
-<div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -22,6 +21,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
         text-align: right;
     }
 </style>
+<div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
