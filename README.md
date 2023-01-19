@@ -9,8 +9,6 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 
 2. Test and Train dataframes
 
-Test           |  Train
-:-------------------------:|:-------------------------:
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -54,7 +52,9 @@ Test           |  Train
     </tr>
   </tbody>
 </table>
-</div>  |   <div>
+</div>  
+
+<div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -100,9 +100,7 @@ Test           |  Train
 </div>
 
 
-3.
-
-3.1 Get Model container image and define the model s3 output location
+3. Get Model container image and define the model s3 output location
 
 ```python
 from sagemaker import image_uris
@@ -110,7 +108,7 @@ algo_image = image_uris.retrieve(framework='image-classification', region=boto3.
 s3_output_location = f"s3://{bucket}/models/image_model"
 ```
 
-3.2 Define a Estimator with one instance of type 'ml.p3.2xlarge' and set the s3 output location
+3.1 Define a Estimator with one instance of type 'ml.p3.2xlarge' and set the s3 output location
 
 ```python
 img_classifier_model=sagemaker.estimator.Estimator(
@@ -123,7 +121,7 @@ img_classifier_model=sagemaker.estimator.Estimator(
 )
 ```
 
-3.3 Set hyperparameters
+3.2 Set hyperparameters
 
 ```python
 img_classifier_model.set_hyperparameters(
@@ -132,7 +130,7 @@ img_classifier_model.set_hyperparameters(
     num_training_samples= len(df_train) # the total number of training samples
 )
 ```
-3.4 Define four TrainingInput classes
+3.3 Define four TrainingInput classes
 
 ```python
 from sagemaker.debugger import Rule, rule_configs
@@ -157,7 +155,7 @@ model_inputs = {
 }
 ```
 
-3.5 Fit the model
+3.4 Fit the model
 
 ```python
 img_classifier_model.fit(inputs=model_inputs)
