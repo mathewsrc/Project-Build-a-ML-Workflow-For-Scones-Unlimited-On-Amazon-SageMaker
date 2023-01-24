@@ -99,7 +99,7 @@ The CIFAR-100 dataset, hosted by the University of Toronto at https://www.cs.tor
 </div>
 
 
-3. Get Model container image and define the model s3 output location
+3. Get image classification model container image and define the s3 output location
 
 ```python
 from sagemaker import image_uris
@@ -107,7 +107,7 @@ algo_image = image_uris.retrieve(framework='image-classification', region=boto3.
 s3_output_location = f"s3://{bucket}/models/image_model"
 ```
 
- 3.1 Define a Estimator with one instance of type 'ml.p3.2xlarge' and set the s3 output location
+ 3.1 Define a estimator with one instance of type 'ml.p3.2xlarge' and set the s3 output location
 
 ```python
 img_classifier_model=sagemaker.estimator.Estimator(
@@ -129,7 +129,7 @@ img_classifier_model.set_hyperparameters(
     num_training_samples= len(df_train) # the total number of training samples
 )
 ```
- 3.3 Define four TrainingInput classes
+ 3.3 Define four trainingInput classes
 
 ```python
 from sagemaker.debugger import Rule, rule_configs
@@ -224,7 +224,7 @@ def lambda_handler(event, context):
     }
 ```
 
- 5.2 Lambda 2: Decode the image output from the previous function and return the inferences back to the Step Function
+ 5.2 Lambda 2: decode the image output from the previous function and return the inferences back to the Step Function
 
 ```python
 import json
@@ -257,7 +257,7 @@ def lambda_handler(event, context):
     }
 ```
 
- 5.3 Lambda 3: Filter low-confidence inferences < .093
+ 5.3 Lambda 3: filter low-confidence inferences < .093
 
 ```python
 def lambda_handler(event, context):
