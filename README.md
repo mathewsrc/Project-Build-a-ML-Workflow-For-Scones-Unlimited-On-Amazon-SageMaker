@@ -188,7 +188,7 @@ Step Function            |  Step Function After running
 :-------------------------:|:-------------------------:
 ![Structure](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/stepfunctions_graph%20(5).png)  |  ![Result](https://github.com/punkmic/Project-Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/master/stepfunctions_graph%20(7).png)
 
- 5.1 Lambda Function: copy an object from S3 and encode it
+ 5.1 Lambda 1: copy an object from S3 and encode it
 
 ```python
 import json
@@ -224,7 +224,7 @@ def lambda_handler(event, context):
     }
 ```
 
- 5.2 Decode the image output from the previous function and return the inferences back to the Step Function
+ 5.2 Lambda 2: Decode the image output from the previous function and return the inferences back to the Step Function
 
 ```python
 import json
@@ -257,7 +257,7 @@ def lambda_handler(event, context):
     }
 ```
 
- 5.3  Filter low-confidence inferences < .093
+ 5.3 Lambda 3: Filter low-confidence inferences < .093
 
 ```python
 def lambda_handler(event, context):
