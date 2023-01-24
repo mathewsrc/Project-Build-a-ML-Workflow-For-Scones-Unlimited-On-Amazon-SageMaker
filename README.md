@@ -238,7 +238,7 @@ ENDPOINT = 'image-classification-2023-01-19-16-05-56-860'
 def lambda_handler(event, context):
     # Decode the image data
     img = event["image_data"]
-    image = base64.b64decode()
+    image = base64.b64decode(img)
 
     # Instantiate a Predictor
     predictor = sagemaker.predictor.Predictor(endpoint_name=ENDPOINT, sagemaker_session=sagemaker.Session())
